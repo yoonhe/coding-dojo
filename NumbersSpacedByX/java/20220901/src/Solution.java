@@ -15,13 +15,13 @@ class Solution {
         // TODO : 13, 14 왜 통과가 안될까? 놓친부분은 ?
         // 
 
-        for(int i = 0; i < n; i += 1) {
+        for (int i = 0; i < n; i += 1) {
             // long number = (i + 1) * x; -> 테스트코드가 실패한 이유를 알아보자
 
             // (i + 1) 을 먼저 long으로 바꿔주고 x를 곱해주는거랑
             // (i + 1) * x 가 int로 계산되고 long으로 변환해주는거랑 무슨 차이지?
 
-            answer[i] = (long) (i + 1) * x;;
+            answer[i] = (long) (i + 1) * x;
         }
 
         return answer;
