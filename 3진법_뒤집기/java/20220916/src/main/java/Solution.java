@@ -24,6 +24,17 @@ class Solution {
     }
 
     public int ternaryToDecimal(String s) {
-        return Integer.parseInt(s, 3);
+        // 0021 -> 3^0 * 1 + 3^1 * 2
+        // 0 ~ 3
+        String[] words = s.split("");
+
+        int result = 0;
+
+        for(int i = 0; i < words.length; i += 1) {
+//            result += Math.pow(3, i) * words[i]
+        }
+
+//        return Integer.parseInt(s, 3);
+        return result;
     }
 }
